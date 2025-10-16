@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Premium - Careerlink Kenya</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header"><div class="wrap header-inner"><div class="brand"><img src="images/site-logo.png" class="logo"><h1>Careerlink Kenya</h1></div></div></header>
+<main class="wrap">
+  <h2>Premium — KES 2 / month (example)</h2>
+  <p>Premium members get:</p>
+  <ul>
+    <li>Free CV writing & review</li>
+    <li>Personalized job alerts</li>
+    <li>Premium courses & mentorship</li>
+  </ul>
+
+  <h3>Pay with M-Pesa</h3>
+  <p>Send payment to <strong>0740752615</strong> (Paybill/Buy Goods depending on your setup). After paying, copy the M-Pesa transaction code (e.g. ABC123XYZ) and submit it below so we receive an email with your details. We will manually verify and grant access.</p>
+
+  <form action="https://formsubmit.co/bensonmurithi2069@gmail.com" method="POST">
+    <!-- FormSubmit will forward the form to the email -->
+    <input type="hidden" name="_subject" value="New Premium Payment - Careerlink Kenya">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <label>Your full name<br><input name="name" required></label><br><br>
+    <label>Your email (used for access)<br><input name="email" type="email" required></label><br><br>
+    <label>M-Pesa phone used for payment<br><input name="mpesa_phone" value="+254740752615" required></label><br><br>
+    <label>M-Pesa transaction code (enter code you received)<br><input name="mpesa_code" required></label><br><br>
+    <input type="hidden" name="_next" value="https://bensonmurithi2069.github.io/thank-you.html">
+    <button class="btn" type="submit">Submit Payment Details</button>
+  </form>
+
+  <h3>How we verify</h3>
+  <ol>
+    <li>We receive an email (to bensonmurithi2069@gmail.com) containing the M-Pesa code and user email.</li>
+    <li>Admin checks M-Pesa till/Paybill or the MPesa statement to confirm the payment.</li>
+    <li>Admin adds the user's email to <code>data/premium_members.json</code> and emails the user a confirmation and access code.</li>
+  </ol>
+
+  <p><strong>Important:</strong> This is a manual verification flow because static sites cannot securely check payments automatically. See README for alternative automated options (Zapier, Integromat/Make, or server backend).</p>
+</main></body></html>
